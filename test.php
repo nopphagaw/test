@@ -4,8 +4,8 @@ echo "test";
 
 <?php
 $servername = getenv("dbn");
-$username = getenv("dbu")
-$password = getenv("dbp");
+$username = "userDXP"
+$password = "7x8Nk7kVQI8dqxQk";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
