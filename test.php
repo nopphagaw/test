@@ -4,7 +4,7 @@ echo "test";
 
 <?php
 $servername = getenv("dbn");
-$username = "userDXP"
+$username = "userDXP";
 $password = "7x8Nk7kVQI8dqxQk";
 
 // Create connection
