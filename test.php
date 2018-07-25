@@ -5,9 +5,9 @@ echo "test 1";
 <?php
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser = getenv("databaseuser");
-$dbpwd = getenv("databasepassword");
-$dbname = getenv("databasename");
+$dbuser = getenv("MYSQL_USER");
+$dbpwd = getenv("MYSQL_PASSWORD");
+$dbname = getenv("sampledb");
 
 $connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
