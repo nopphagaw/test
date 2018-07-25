@@ -3,9 +3,9 @@ echo "test";
 ?>
 
 <?php
-$servername = "localhost";
-$username = "userT3S";
-$password = "cEClU60SkHS82Obn";
+$servername = getenv("dbn");
+$username = getenv("dbu")
+$password = getenv("dbp");
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
