@@ -3,8 +3,8 @@ echo "test 1";
 ?>
 
 <?php
-$dbhost = "mysql";
-$dbport = 3306;
+$dbhost = getenv("MYSQL_SERVICE_HOST");
+$dbport = getenv("MYSQL_SERVICE_PORT");
 $dbuser = "user5YW";
 $dbpwd = "k45WnAQoojrkj01Y";
 $dbname = "sampledb";
