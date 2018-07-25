@@ -3,11 +3,11 @@ echo "test 1";
 ?>
 
 <?php
-$dbhost = getenv("MYSQL_SERVICE_HOST");
-$dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser = getenv("MYSQL_USER");
-$dbpwd = getenv("MYSQL_PASSWORD");
-$dbname = getenv("sampledb");
+$dbhost = "mysql";
+$dbport = "3306";
+$dbuser = "user5YW";
+$dbpwd = "k45WnAQoojrkj01Y";
+$dbname = "sampledb";
 
 $connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
