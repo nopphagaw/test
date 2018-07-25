@@ -3,7 +3,7 @@ echo "test";
 ?>
 
 <?php
-$servername = getenv("dbn");
+$servername = "localhost";
 $username = "userDXP";
 $password = "7x8Nk7kVQI8dqxQk";
 
