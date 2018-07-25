@@ -3,9 +3,9 @@ echo "test";
 ?>
 
 <?php
-$servername = "localhost";
-$username = "userDXP";
-$password = "7x8Nk7kVQI8dqxQk";
+$servername = "mysql://mysql:3306/";
+$username = "user5YW";
+$password = "k45WnAQoojrkj01Y";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
