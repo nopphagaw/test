@@ -3,16 +3,18 @@ echo "test 1";
 ?>
 
 <?php
-$servername = "mysql://mysql:3306/";
-$username = "user5YW";
-$password = "k45WnAQoojrkj01Y";
+$dbhost = getenv("MYSQL_SERVICE_HOST");
+$dbport = getenv("MYSQL_SERVICE_PORT");
+$dbuser = getenv("databaseuser");
+$dbpwd = getenv("databasepassword");
+$dbname = getenv("databasename");
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-echo "Connected successfully";
+$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+if ($connection->connect_errno) {
+    printf("Connect failed: %s\n", $mysqli->connect_error);
+    exit();
+} else {
+    printf("Connected to the database");
+}
+$connection->close();
 ?>
